@@ -533,12 +533,12 @@
 <body>
     <div class="header">
         <div class="container">
-            <a href="bullishfx-page2-account-selection.html" class="back-button">
+            <a href="akun.html" class="back-button">
                 <span>←</span>
                 <span>Kembali ke Pilihan Akun</span>
             </a>
 
-            <div class="account-badge">⭐ Akun Terpopuler</div>
+            <div class="account-badge">Akun Terpopuler</div>
             
             <h1>Buka Akun ULT Islamic</h1>
             
@@ -590,7 +590,6 @@
                 <div class="dropdown-section active">
                     <div class="dropdown-header" onclick="toggleDropdown(this)">
                         <h3>
-                            <span>🌟</span>
                             <span>Micro Account</span>
                             <span class="account-tag">Untuk Pemula</span>
                         </h3>
@@ -654,7 +653,6 @@
                 <div class="dropdown-section">
                     <div class="dropdown-header" onclick="toggleDropdown(this)">
                         <h3>
-                            <span>🚀</span>
                             <span>Mini Account</span>
                             <span class="account-tag">Paling Populer</span>
                         </h3>
@@ -718,7 +716,6 @@
                 <div class="dropdown-section">
                     <div class="dropdown-header" onclick="toggleDropdown(this)">
                         <h3>
-                            <span>💎</span>
                             <span>Regular Account</span>
                             <span class="account-tag">Professional</span>
                         </h3>
@@ -859,9 +856,9 @@
         <div class="container">
             <h3>Ingin Memilih Tipe Akun Lain?</h3>
             <p>Kembali ke halaman sebelumnya untuk membandingkan LP, FIX, atau PRO Islamic Account</p>
-            <a href="bullishfx-page2-account-selection.html" class="back-link">
+            <a href="akun.html" class="back-link">
                 <span>←</span>
-                <span>Kembali ke Pilihan Akun Islamic</span>
+                <span>Kembali ke Pilihan Akun</span>
             </a>
         </div>
     </div>
