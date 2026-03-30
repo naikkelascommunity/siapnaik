@@ -619,62 +619,68 @@
             .header-subtitle {
                 font-size: 16px;
             }
-            
-        }
-        /* --- CSS TOMBOL INDEPENDEN --- */
-.btn-akun-independen {
-    /* 1. Layout & Positioning */
-    display: inline-flex;  /* Membuat tombol melayang sesuai konten */
-    align-items: center;    /* Meratakan ikon dan teks secara vertikal */
-    justify-content: center; /* Meratakan konten di tengah tombol */
+
+/* Container pembungkus agar teks dan tombol rapi */
+.tutorial-wrapper {
+    text-align: center;
+    margin: 30px 0;
+    padding: 10px;
+}
+
+/* Tulisan instruksi di atas tombol */
+.tutorial-label {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    color: #ffffff;
+    margin-bottom: 15px;
+    opacity: 0.9;
+    letter-spacing: 0.5px;
+}
+
+/* Tombol Utama */
+.btn-tutorial-main {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12px 35px;
     
-    /* 2. Spacing (Penting agar bentuk kapsul proporsional) */
-    padding: 10px 30px;    /* 10px atas-bawah, 30px kiri-kanan */
-    
-    /* 3. Typography */
-    font-family: 'Montserrat', sans-serif; /* Sesuai font landing page Anda */
+    /* Typography */
+    font-family: 'Montserrat', sans-serif;
     font-size: 16px;
-    font-weight: 600;      /* Semi-Bold */
-    color: #ffffff !important; /* Memaksa warna teks tetap putih */
-    text-decoration: none !important; /* Menghapus garis bawah link */
+    font-weight: 600;
+    color: #ffffff !important;
+    text-decoration: none !important;
     
-    /* 4. Background & Border (Efek Kaca) */
-    background: rgba(255, 255, 255, 0.15); /* Transparansi putih halus */
-    border: 2px solid rgba(255, 255, 255, 0.4); /* Garis tepi semi-transparan */
-    border-radius: 50px;   /* Membuat bentuk kapsul sempurna */
+    /* Efek Visual (Glassmorphism) */
+    background: rgba(255, 255, 255, 0.12);
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    border-radius: 50px;
     
-    /* 5. Interactivity & Effects */
+    /* Interaktivitas */
     cursor: pointer;
-    transition: all 0.3s ease; /* Transisi halus untuk semua efek hover */
-    backdrop-filter: blur(5px); /* Efek blur di belakang tombol */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Bayangan halus agar tombol terlihat menonjol */
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    backdrop-filter: blur(8px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
 }
 
-/* --- Styling Spesifik untuk Teks & Ikon --- */
-.btn-akun-independen .btn-text {
-    display: inline-block;
+/* Ikon Panah */
+.btn-tutorial-main .btn-icon {
+    margin-right: 12px;
+    font-size: 18px;
+    font-weight: bold;
 }
 
-.btn-akun-independen .btn-icon {
-    display: inline-block;
-    margin-right: 15px;    /* Jarak antara ikon panah dan teks */
-    font-size: 18px;       /* Sedikit lebih besar dari teks */
-    font-weight: bold;     /* Membuat panah terlihat tebal */
+/* Efek Hover */
+.btn-tutorial-main:hover {
+    background: rgba(255, 255, 255, 0.22);
+    border-color: rgba(255, 255, 255, 0.6);
+    transform: translateY(-3px) scale(1.02);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
 }
 
-/* --- Efek Hover (Saat kursor di atas tombol) --- */
-.btn-akun-independen:hover {
-    background: rgba(255, 255, 255, 0.25); /* Latar belakang sedikit lebih terang */
-    border-color: rgba(255, 255, 255, 0.7); /* Garis tepi lebih terlihat */
-    
-    /* Efek Gerakan */
-    transform: translateX(-5px); /* Sedikit bergeser ke kiri sesuai arah panah */
-    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3); /* Bayangan lebih kuat */
-}
-
-/* --- Efek saat diklik --- */
-.btn-akun-independen:active {
-    transform: translateX(-2px) scale(0.98); /* Sedikit mengecil untuk umpan balik visual */
+/* Efek Klik */
+.btn-tutorial-main:active {
+    transform: translateY(0) scale(0.98);
 }
         
     </style>
@@ -921,6 +927,14 @@
             </div>
         </div>
     </div>
+
+<div class="tutorial-wrapper">
+    <p class="tutorial-label">Bingung cara mendaftarkan akun BullishFX? Klik tombol dibawah ini.</p>
+    <a href="tutorial.html" class="btn-tutorial-main">
+        <span class="btn-icon">←</span>
+        <span class="btn-text">Tutorial Seputar BullishFX</span>
+    </a>
+</div>
     
 <a href="tutorialbullishfx.html" class="btn-akun-independen">
     <span class="btn-icon">←</span>
