@@ -619,69 +619,6 @@
             .header-subtitle {
                 font-size: 16px;
             }
-
-/* Container pembungkus agar teks dan tombol rapi */
-.tutorial-wrapper {
-    text-align: center;
-    margin: 30px 0;
-    padding: 10px;
-}
-
-/* Tulisan instruksi di atas tombol */
-.tutorial-label {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 14px;
-    color: #ffffff;
-    margin-bottom: 15px;
-    opacity: 0.9;
-    letter-spacing: 0.5px;
-}
-
-/* Tombol Utama */
-.btn-tutorial-main {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    padding: 12px 35px;
-    
-    /* Typography */
-    font-family: 'Montserrat', sans-serif;
-    font-size: 16px;
-    font-weight: 600;
-    color: #ffffff !important;
-    text-decoration: none !important;
-    
-    /* Efek Visual (Glassmorphism) */
-    background: rgba(255, 255, 255, 0.12);
-    border: 2px solid rgba(255, 255, 255, 0.3);
-    border-radius: 50px;
-    
-    /* Interaktivitas */
-    cursor: pointer;
-    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-    backdrop-filter: blur(8px);
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
-}
-
-/* Ikon Panah */
-.btn-tutorial-main .btn-icon {
-    margin-right: 12px;
-    font-size: 18px;
-    font-weight: bold;
-}
-
-/* Efek Hover */
-.btn-tutorial-main:hover {
-    background: rgba(255, 255, 255, 0.22);
-    border-color: rgba(255, 255, 255, 0.6);
-    transform: translateY(-3px) scale(1.02);
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
-}
-
-/* Efek Klik */
-.btn-tutorial-main:active {
-    transform: translateY(0) scale(0.98);
-}
         
     </style>
 </head>
@@ -928,18 +865,16 @@
         </div>
     </div>
 
-<div class="tutorial-wrapper">
-    <p class="tutorial-label">Bingung cara mendaftarkan akun BullishFX? Klik tombol dibawah ini.</p>
-    <a href="tutorial.html" class="btn-tutorial-main">
-        <span class="btn-icon">←</span>
-        <span class="btn-text">Tutorial Seputar BullishFX</span>
-    </a>
-</div>
-    
-<a href="tutorialbullishfx.html" class="btn-akun-independen">
-    <span class="btn-icon">←</span>
-    <span class="btn-text">Tutorial Seputar BullishFX</span>
-</a>
+   <div class="back-to-selection">
+        <div class="container">
+            <h3>Bingung Cara Mendaftarkan Akun BullishFX?</h3>
+            <p>Klik tombol dibawah ini untuk tutorial seputar BullishFX.</p>
+            <a href="tutorialbullishfx.html" class="back-link">
+                <span>←</span>
+                <span>Tutorial Seputar BullishFX</span>
+            </a>
+        </div>
+    </div>
     
     <!-- Branding Section -->
     <div class="branding-section">
