@@ -142,6 +142,37 @@
             opacity: 0.7;
         }
 
+<script>
+    const headers = document.querySelectorAll('.card-header');
+    
+    headers.forEach(header => {
+        header.addEventListener('click', () => {
+            // Toggle class aktif untuk animasi akordeon
+            header.classList.toggle('active');
+            const content = header.nextElementSibling;
+            const video = content.querySelector('video');
+            const span = header.querySelector('span');
+
+            if (header.classList.contains('active')) {
+                span.textContent = '-';
+                // Otomatis putar video jika ada
+                if (video) {
+                    video.play().catch(error => {
+                        console.log("Autoplay diblokir browser, pengguna harus klik manual: ", error);
+                    });
+                }
+            } else {
+                span.textContent = '+';
+                // Otomatis berhenti jika akordeon ditutup
+                if (video) {
+                    video.pause();
+                    video.currentTime = 0; // Reset ke awal
+                }
+            }
+        });
+    });
+</script>
+        
     </style>
 </head>
 <body>
@@ -169,6 +200,20 @@
                 <li>Lakukan transfer sesuai nominal + kode unik ke rekening Local Depositor.</li>
                 <li>Cek email untuk mendapatkan login & password MetaTrader 4 (Server: <strong>Oval-Live</strong>).</li>
             </ol>
+             <div class="tutorial-card">
+                <div class="card-header" data-video="videoDaftar">1. Cara Pendaftaran Member Baru <span>+</span></div>
+                <div class="card-content">
+                    <video id="videoDaftar" width="100%" controls preload="auto" style="border-radius: 8px; margin-bottom: 15px;">
+                        <source src="REGISTER NEW MEMBER.mp4" type="video/mp4">
+                        Browser Anda tidak mendukung tag video.
+                    </video>
+                    <ol>
+                        <li>Masuk ke aplikasi Bfx Mobile 4.0[cite: 2, 29, 42, 54, 57, 66, 73, 77].</li>
+                        <li>Klik link referral atau scan kode QR[cite: 3].</li>
+                        <li>Lakukan verifikasi email dan unggah KTP serta foto selfie[cite: 6, 8].</li>
+                        </ol>
+                </div>
+            </div>
         </div>
     </div>
 
